@@ -15,6 +15,7 @@
           <th>Price</th>
           <th>Tags</th>
           <th>Description</th>
+          <th>Created At</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -27,8 +28,9 @@
             <td><%= product.price %></td>
             <td><%= render_tags(product.tags) %></td>
             <td><%= product.description %></td>
+            <td><%= render_time product.created_at %></td>
             <td>
-              <%= link_to product_path(product), remote: true do %>
+              <%= link_to product_path(product.id), remote: true do %>
                 <span class="glyphicon glyphicon-eye-open"></span>
               <% end %>
             </td>
