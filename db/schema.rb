@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_01_26_084921) do
     t.text "description"
     t.string "country"
     t.text "tags"
-    t.decimal "price", precision: 10
+    t.decimal "price", precision: 20, scale: 3
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

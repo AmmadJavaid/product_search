@@ -1,3 +1,15 @@
 .m-l-xs {
   margin-left: 5px;
 }
+
+.m-t-sm {
+  margin: 10px;
+}
+
+.m-b-sm {
+  margin-bottom: 10px;
+}
+
+.m-b-md {
+  margin-bottom: 15px;
+}
