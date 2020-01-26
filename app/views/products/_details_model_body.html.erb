@@ -1,0 +1,22 @@
+<div class="modal-dialog">
+
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><%= @product.title %></div>
+        <div class="panel-body">
+          <p><%= @product.description %></p>
+          <div><strong>Price</strong> <%= @product.price %></div>
+          <div><strong>Country</strong> <%= @product.country %></div>
+          <div>
+            <strong>Tags: </strong><%= render_tags(@product.tags) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+

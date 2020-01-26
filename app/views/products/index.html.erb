@@ -15,6 +15,7 @@
           <th>Price</th>
           <th>Tags</th>
           <th>Description</th>
+          <th>Action</th>
         </tr>
       </thead>
 
@@ -26,9 +27,15 @@
             <td><%= product.price %></td>
             <td><%= render_tags(product.tags) %></td>
             <td><%= product.description %></td>
+            <td>
+              <%= link_to product_path(product), remote: true do %>
+                <span class="glyphicon glyphicon-eye-open"></span>
+              <% end %>
+            </td>
           </tr>
         <% end %>
       </tbody>
     </table>
   </div>
 <%= paginate @products %>
+<div id="product_details" class="modal fade" role="dialog"></div>
