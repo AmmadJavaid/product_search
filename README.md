@@ -1,24 +1,29 @@
-# README
+### Features:
+- Registration
+- Sign in
+- User (show, list, update_profie)
+- Post CRUD
+- Comment CRUD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Setup Dependecies
 
-Things you may want to cover:
+* ruby-2.7.2
+* rails 6.1.4
+* postgresql
 
-* Ruby version
+### Project Setup
+```
+ bundle install
+ rails db:create
+ rails db:migrate
+ rails db:seed
+ rails s -p 3000
+```
+### Run spec
+`bundle exec rake rswag`
 
-* System dependencies
+### API documentation
+`localhost:3000/api-docs/`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Demo
+http://new-wave-assignment.herokuapp.com/api-docs/index.html
